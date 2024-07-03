@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="net.testcases_worktimemodule.OrganizationSetting">
+	  
+	<listeners>
+		<listener class-name="io.qameta.allure.testng.AllureTestNg" />
+		<listener class-name="net.Commons.TestAllureListener" />
+	</listeners>
+	
+	  <test name="OrganizationAdmin">
+		<parameter name="browser" value="chrome" />
+		<classes>
+<!--			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationUnkonwnAOSandAFFS"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationWeekStartDay"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationWorLoadCategory"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationProductiveHoursLabel"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationUserGroupLabel"/>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationAllGroupLabel"/>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationManager1Label"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationManager2Label"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationReferenceIDLabel"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationNotRatedLabel"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationNonWorkShift"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationAllUserSelection"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationAllowUsersToScheduleReports"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationAllowReportSchedulling"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationEXpectedProductiveHours"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationWhenNoDataIsReported"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationTheNumberOfRecordInReportSummary"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationExcelExportFileExtension"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationDurationFormatInActivityReport"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationDurationFormatExcelReport"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationDoNotDisplayNotification"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationEnableAccessControlIntegration"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationRagCode"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationHeartBeatNotification"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationLiveStreamingFrequency"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationDataCollectionLimit"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationLiveStreamingViewer"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationEnableNotificationBubblePopUp"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationShiftQualificationPromptUser"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationShiftQualificationManageANewUserSession"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationWhenTheApplicantLeaveManagement"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationTheNumberOfRecordConfigurationSummary"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationSuperGroupLevel0"></class>-->
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationShiftQualificationMergeCurrentUserSession"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationShiftQualificationStartUserSession"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationShiftQualificationDisplayShiftTagged"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationShiftQualificationDisplayShiftAllocated"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationShiftQualificationDisplayBestQualifiedShift"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationShiftQualificationDisplayAllShifts"></class>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationShiftQualificationDisplayCurrentDayLastShift"/>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationShiftQualificationDisplayNonWorkShift"/>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationShiftQualificationComputeSessionDateBased"/>
+			<class name="net.testcases_worktimemodule.OrganizationSetting.OrganizationShiftQualificationTagYourSpecifiedShift"/>
+		</classes>		
+  </test> <!-- Test -->
+  </suite> <!-- Suite -->

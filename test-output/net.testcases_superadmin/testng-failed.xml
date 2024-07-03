@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [net.testcases_superadmin]">
+  <listeners>
+    <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    <listener class-name="net.Commons.TestAllureListener"/>
+  </listeners>
+  <test thread-count="5" name="net.testcases_superadmin(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="net.testcases_superadmin.GlobalSettingCoreServicRequiredFields">
+        <methods>
+          <include name="globalSettingCoreServicRequiredFields" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- net.testcases_superadmin.GlobalSettingCoreServicRequiredFields -->
+    </classes>
+  </test> <!-- net.testcases_superadmin(failed) -->
+</suite> <!-- Failed suite [net.testcases_superadmin] -->

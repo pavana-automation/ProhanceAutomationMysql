@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="net.testcases_superadmin">
+	<listeners>
+	<listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+	<listener class-name="net.Commons.TestAllureListener"/>
+	</listeners>
+
+
+<test name="net.testcases_superadmin">
+<parameter name="browser" value="chrome"/>
+<classes>
+<!-- <class name="net.testcases_superadmin.ClientExcelExport" />
+			
+			<class name="net.testcases_superadmin.ClientsAllocatedRequiredField" />
+			<class name="net.testcases_superadmin.ClientsLogs" /> 
+			 <class name="net.testcases_superadmin.CustomAdapterRequiredField"/>
+			<class name="net.testcases_superadmin.CustomAdapterMultipleDateVerification"/>
+			<class name="net.testcases_superadmin.CustomAdapterExcelValidation"/>
+			<class name="net.testcases_superadmin.CustomAdapterAdd"/>
+			<class name="net.testcases_superadmin.CustomAdapterDateVerification"/>
+			<class name="net.testcases_superadmin.CustomAdapterDateRangeVerification"/>
+			<class name="net.testcases_superadmin.CustomAdapterPDFValidation"/>
+			<class name="net.testcases_superadmin.CustomAdapterCloseBtn"/>-->
+<!--  Time zone  -->
+<!-- <class name="net.testcases_superadmin.GlobalTimeZoneActive"/>
+			<class name="net.testcases_superadmin.GlobalTimeZonePdfExport"/>
+			<class name="net.testcases_superadmin.GlobalTimeZoneExcelExport"/>
+			
+			<class name="net.testcases_superadmin.GlobalTimeZoneModify"/>
+			<class name="net.testcases_superadmin.GlobalTimeZoneSorting"/>-->
+<!--  Partition Manager  --> 
+ <!--<class name="net.testcases_superadmin.PartitionManagerClear"/>
+      		<class name="net.testcases_superadmin.PatitionManagerWithManyEmails"/>
+      		<class name="net.testcases_superadmin.PartitionManangerSave"/>
+     		<class name="net.testcases_superadmin.PartitionManagerWithMissedEmail"/> -->
+   <!--Global Settings  --> 
+   <class name="net.testcases_superadmin.GlobalSettingCoreServicRequiredFields"/>
+		<!--
+		<class name="net.testcases_superadmin.GlobalSettingEmailServerMissedUsername"/>
+		<class name="net.testcases_superadmin.GlobalSettingClientSave"/>
+		<class name="net.testcases_superadmin.GlobalSettingCoreServicesSave"/>
+		<class name="net.testcases_superadmin.GlobalSettingsEmailServerClear"/>
+		<class name="net.testcases_superadmin.GlobalSettingCoreServiceForGoalNotificationRange"/>
+		<class name="net.testcases_superadmin.GlobalSettingApplicationUrlClear"/>
+		<class name="net.testcases_superadmin.GlobalSettingCoreserviceClientRawDataVerification"/>
+		<class name="net.testcases_superadmin.GlobalSettingEmailServerMissingPasswordRequiredField"/>
+		<class name="net.testcases_superadmin.GlobalSettingApplicationURLSave"/>
+		<class name="net.testcases_superadmin.GlobalSettingCoreServiceSpecificClientDateVerfication"/>
+		<class name="net.testcases_superadmin.GlobalSettingsEmailServerSave"/>
+		<class name="net.testcases_superadmin.GlobalSettingsClientsClearBtn"/>
+		<class name="net.testcases_superadmin.GlobalSettingEmailserMissingFromAddressField"/>
+		<class name="net.testcases_superadmin.GlobalSettingCoreServicesClear"/>-->
+ <!-- Global Langauage  -->
+
+ 	<!--<class name="net.testcases_superadmin.GlobalLanguageActiveAndInactive"/>
+		<class name="net.testcases_superadmin.GlobalLanguagePdfExport"/>
+		<class name="net.testcases_superadmin.GlobalLanguageExcelExport"/>
+		 <class name="net.testcases_superadmin.GlobalLanguageSearchValidation"/>s
+		<class name="net.testcases_superadmin.GlobalLanguageModify"/>
+	
+		<class name="net.testcases_superadmin.GlobalLanguageSortingValidation"/> -->
+  <!--clients --> 
+ <!--<class name="net.testcases_superadmin.ClientsAllocatedRequiredField"/>
+		<class name="net.testcases_superadmin.ClientsPDFExport"/>
+		<class name="net.testcases_superadmin.ClientsMissingToSelectClient"/>
+		<class name="net.testcases_superadmin.ClientsUnkownClientsToKnown"/>
+		<class name="net.testcases_superadmin.ClientsLogs"/>
+		<class name="net.testcases_superadmin.ClientsSorting"/>
+		<class name="net.testcases_superadmin.ClientsSearchValidation"/>
+		<class name="net.testcases_superadmin.ClientExcelExport"/>
+		 -->
+ 	<!--<class name="test.mssql.Superadmin.Clients.ClientsRepostColumn"/>  -->
+ <!-- Data compontents  -->
+ 	
+ <!--<class name="net.testcases_superadmin.DataComponentsRefresh"/>
+	<class name="net.testcases_superadmin.DataComponentsDownload"/>
+		<class name="net.testcases_superadmin.DataComponentsSorting"/>
+		<class name="net.testcases_superadmin.DataComponentsVerify"/> 
+		-->
+  <!--Distribution cache   -->
+  
+<!-- <class name="net.testcases_superadmin.DistributedCacheReload"/>
+		<class name="net.testcases_superadmin.DistributedCacheWithUnselectedCache"/>
+		<class name="net.testcases_superadmin.DistributedCacheSelectAllAndClear"/>
+		<class name="net.testcases_superadmin.GlobalSettingCoreserviceClientRawDataVerification"/>-->
+<!-- Service manager -->
+         <!--<class name="net.testcases_superadmin.ServiceManagerSearching"/>
+		<class name="net.testcases_superadmin.ServiceManagerSorting"/>-->
+		<!--Integrations-->
+		<!--<class name="net.testcases_superadmin.IntegrationClearValidation"/>
+		
+		<class name="net.testcases_superadmin.IntegrationsSaveValidation"/>-->
+		
+	
+	<!--	<class name="net.testcases_superadmin.SessionUtilitiesCloseAndCreateNewSession"/>
+		<class name="net.testcases_superadmin.SessionUtilitiesDeleteActivity"/>
+		<class name="net.testcases_superadmin.SessionUtilitiesAosMapping"/>
+		<class name="net.testcases_superadmin.SessionUtlitiliesDownloadValidation"/>
+		<class name="net.testcases_superadmin.SessionUtilitiesChangeSessionDateAndShift"/>
+		<class name="net.testcases_superadmin.SessionUtilitiesDeleteActivity"/>
+		<class name="net.testcases_superadmin.SessionUtlititiesRecomputeSessionShift"/>
+		<class name="net.testcases_superadmin.SessionUtilitiesWithMissingRecordsToSelect"/>-->
+
+
+</classes>
+</test>
+</suite>

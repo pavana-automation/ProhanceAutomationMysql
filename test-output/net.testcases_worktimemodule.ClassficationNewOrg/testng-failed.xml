@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [net.testcases_worktimemodule.ClassficationNewOrg]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    <listener class-name="net.Commons.TestAllureListener"/>
+  </listeners>
+  <test thread-count="5" name="net.testcases_worktimemodule.ClassficationNewOrg(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="net.testcases_worktimemodule.ClassficationNewOrg.InActivateWithDadaDependencyValidation">
+        <methods>
+          <include name="inActivateWithDadaDependencyValidation" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- net.testcases_worktimemodule.ClassficationNewOrg.InActivateWithDadaDependencyValidation -->
+    </classes>
+  </test> <!-- net.testcases_worktimemodule.ClassficationNewOrg(failed) -->
+</suite> <!-- Failed suite [net.testcases_worktimemodule.ClassficationNewOrg] -->

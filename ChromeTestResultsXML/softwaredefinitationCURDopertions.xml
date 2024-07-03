@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="net.testcases_assetoptimizationmodule.softwaredefinitationCURDopertions">
+
+	<listeners>
+		<listener class-name="io.qameta.allure.testng.AllureTestNg" />
+		<listener class-name="net.Commons.TestAllureListener" />
+	</listeners>
+	<test thread-count="5"
+		name="net.testcases_assetoptimizationmodule.softwaredefinitationCURDopertions">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class
+				name="net.testcases_assetoptimizationmodule.softwaredefinitationCURDopertions.SoftwareDefinitationForSoftwareTagsCURD" />
+		<!--<class
+				name="net.testcases_assetoptimizationmodule.softwaredefinitationCURDopertions.SoftwareDefinitionForSoftwareTagsPdf" />
+			<class
+				name="net.testcases_assetoptimizationmodule.softwaredefinitationCURDopertions.SoftwareDefinitionPdfExport" />
+			<class
+				name="net.testcases_assetoptimizationmodule.softwaredefinitationCURDopertions.SoftwareDefinitationExcelExport" />
+			
+
+			<class
+				name="net.testcases_assetoptimizationmodule.softwaredefinitationCURDopertions.SoftwareDefinitationWithMissingAssociatedProcessesField" />
+			<class
+				name="net.testcases_assetoptimizationmodule.softwaredefinitationCURDopertions.SoftwareDefinitationWithMissingNameField" />
+			<class
+				name="net.testcases_assetoptimizationmodule.softwaredefinitationCURDopertions.SoftwareDefinitationForSoftwareTagsClear" />
+			<class
+				name="net.testcases_assetoptimizationmodule.softwaredefinitationCURDopertions.SoftwareDefinitationClear" />
+			<class
+				name="net.testcases_assetoptimizationmodule.softwaredefinitationCURDopertions.SoftwareDefinitationCURD" />
+			<class
+				name="net.testcases_assetoptimizationmodule.softwaredefinitationCURDopertions.SoftwareDefinitationForSoftwareTagsWithMissingSoftwareTag" />
+
+			<class
+				name="net.testcases_assetoptimizationmodule.softwaredefinitationCURDopertions.WorkStationwithMissingNameFiled" />
+			<class
+				name="net.testcases_assetoptimizationmodule.softwaredefinitationCURDopertions.WorkStationwithMissingScanField" />
+			<class
+				name="net.testcases_assetoptimizationmodule.softwaredefinitationCURDopertions.SoftwaredefinitionForActivityTagPresent" />
+			<class
+				name="net.testcases_assetoptimizationmodule.softwaredefinitationCURDopertions.SoftwareDefinitionActivityTagEnableInSoftwareTagPage" />
+			<class
+				name="net.testcases_assetoptimizationmodule.softwaredefinitationCURDopertions.WorkStationPdfExport" />
+			<class
+				name="net.testcases_assetoptimizationmodule.softwaredefinitationCURDopertions.WorkStationExcelExport" />
+			<class
+				name="net.testcases_assetoptimizationmodule.softwaredefinitationCURDopertions.SoftwareDefinitionForSoftwareTagsExcelexport" />
+			<class
+				name="net.testcases_assetoptimizationmodule.softwaredefinitationCURDopertions.WorkStationGroupsClear" />-->
+		</classes>
+	</test> <!-- net.testcases_assetoptimizationmodule.softwaredefinitationCURDopertions -->
+</suite> <!-- softwaredefinitationCURDopertions -->

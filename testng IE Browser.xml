@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="FolderWiseTestCases" group-by-instances="true" preserve-order="true">
+    <suite-files>
+        <suite-file path="IETestResultsXML\supergroup_addmodifydelete_with_bulkupload_and_validate_offlinereports_in_mysql.xml" />
+        <suite-file path="IETestResultsXML\usergroup_addmodifydelete_with_bulkupload_and_validate_offlinereports_in_mysql.xml" />
+        <suite-file path="IETestResultsXML\net.testcases_worktimemodule.AuditTrailTabValidationWrokTimeAdministrationMenu.xml" />
+        <suite-file path="IETestResultsXML\net.testcases_worktimemodule.BusinessHierarchy.xml" />
+        <suite-file path="IETestResultsXML\net.testcases_wrokflowmodule.validate_customattribute_bulkupload.xml" />
+        <suite-file path="IETestResultsXML\softwaredefinitationCURDopertions.xml" />
+        <suite-file path="IETestResultsXML\validate_worktemplate_addmodifydelete_administrationmenu.xml" />
+        <suite-file path="IETestResultsXML\net.testcases_worktimemodule.ClassficationNewOrg.xml" />
+              
+        <!-- Add more suite-file entries for additional folders -->
+    </suite-files>
+</suite>
+
+	

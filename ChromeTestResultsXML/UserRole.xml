@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="net.testcases_worktimemodule.validate_user_roles">
+		<listeners>
+		<listener class-name="io.qameta.allure.testng.AllureTestNg" />
+		<listener class-name="net.Commons.TestAllureListener" />
+	</listeners>
+	
+  <test thread-count="5" name="UserRole">
+		<parameter name="browser" value="chrome" />
+	<classes>
+
+		
+	<class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerRestrictusers"/>
+		<class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesAddNewManager"/>
+     <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerDefineNewActivity"/>
+   	  <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesAddNewManager"/>
+      <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerAllowUserToExportDataXLS"/>
+      <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerHierarchyLevel"/>
+      <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyMemberHierarchyLevel"/>
+      <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRoleExcelValidation"/>
+      <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerModuleSelection"/>
+      <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesAddNewMemberDelete"/>
+      <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerExportDataPermissionAllowUserToMail"/>
+      <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerExportDataPermissionNotAllowUserToDemandOnMail"/>
+      <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerDontAllowUserToExportDataXLS"/>
+      <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditActivityRating"/>
+      <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyMemberToManager"/>
+      <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolePDFValidation"/>
+      <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerDontAllowUserToExportDataPDF2"/>
+      <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesBulkUpdateMember"/>
+      <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerAllowUserToExportDataPDF"/>
+      <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRoleSorting"/>
+      <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyMemberWorkLoadAnalysis"/>
+      <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerToMeber"/>
+      <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesAddNewManagerDelete"/>
+      <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesBulkUpdate"/>
+      <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesAddNewMember"/>	
+       <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyMemberModuleSelection"/>
+       <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditAO"/>
+      <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditClientSetting"/>	
+      <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditUserGroupWidget"/>	
+      <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditWorkOutPut"/>	
+      <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditUserWidget"/>
+    <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyMemberWorkLoadAnalysis"/>
+      <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditWorkLOadForGRoup"/>
+      <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditWorkLOadForUser"/>
+      <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditAttendence"/>
+     
+      <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCurrentActivity"/>
+       <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCustomReports"/>
+       <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCustomReportsPublishReport"/>
+       <class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditTimeSheet"/>
+       
+       
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

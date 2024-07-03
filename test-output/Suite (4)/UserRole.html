@@ -1,0 +1,911 @@
+<html>
+<head>
+<title>TestNG:  UserRole</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>UserRole</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>33/4/8</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jun 10 14:17:32 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>1662 seconds (1662472 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCustomReports.userRolesModifyManagerEditCustomReports()'><b>userRolesModifyManagerEditCustomReports</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCustomReports<br>Parameters: chrome</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 167
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:289)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:194)
+	at net.pages_worktimemodule.UserRolePage.selectCustomReports(UserRolePage.java:422)
+	at net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCustomReports.userRolesModifyManagerEditCustomReports(UserRolesModifyManagerEditCustomReports.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1232635769", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1232635769'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 167
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:289)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:194)
+	at net.pages_worktimemodule.UserRolePage.selectCustomReports(UserRolePage.java:422)
+	at net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCustomReports.userRolesModifyManagerEditCustomReports(UserRolesModifyManagerEditCustomReports.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1251)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>24</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCustomReports@4a89ef44</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCurrentActivity.userRolesModifyManagerEditCurrentActivity()'><b>userRolesModifyManagerEditCurrentActivity</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCurrentActivity<br>Parameters: chrome</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 230
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:289)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:194)
+	at net.pages_worktimemodule.UserRolePage.selectCurrentActivity(UserRolePage.java:415)
+	at net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCurrentActivity.userRolesModifyManagerEditCurrentActivity(UserRolesModifyManagerEditCurrentActivity.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace603206407", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace603206407'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 230
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:289)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:194)
+	at net.pages_worktimemodule.UserRolePage.selectCurrentActivity(UserRolePage.java:415)
+	at net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCurrentActivity.userRolesModifyManagerEditCurrentActivity(UserRolesModifyManagerEditCurrentActivity.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1251)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>23</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCurrentActivity@a0bf272</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCustomReportsPublishReport.userRolesModifyManagerEditCustomReportsPublishReport()'><b>userRolesModifyManagerEditCustomReportsPublishReport</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCustomReportsPublishReport<br>Parameters: chrome</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 167
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:289)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:194)
+	at net.pages_worktimemodule.UserRolePage.selectCustomReports(UserRolePage.java:422)
+	at net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCustomReportsPublishReport.userRolesModifyManagerEditCustomReportsPublishReport(UserRolesModifyManagerEditCustomReportsPublishReport.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace963653379", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace963653379'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 167
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:289)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:194)
+	at net.pages_worktimemodule.UserRolePage.selectCustomReports(UserRolePage.java:422)
+	at net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCustomReportsPublishReport.userRolesModifyManagerEditCustomReportsPublishReport(UserRolesModifyManagerEditCustomReportsPublishReport.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1251)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>24</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCustomReportsPublishReport@310a7859</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditTimeSheet.userRolesModifyManagerEditTimeSheet()'><b>userRolesModifyManagerEditTimeSheet</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditTimeSheet<br>Parameters: chrome</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 93
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:289)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:194)
+	at net.pages_worktimemodule.UserRolePage.selectTimeSheet(UserRolePage.java:408)
+	at net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditTimeSheet.userRolesModifyManagerEditTimeSheet(UserRolesModifyManagerEditTimeSheet.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1023505094", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1023505094'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 93
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:289)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:194)
+	at net.pages_worktimemodule.UserRolePage.selectTimeSheet(UserRolePage.java:408)
+	at net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditTimeSheet.userRolesModifyManagerEditTimeSheet(UserRolesModifyManagerEditTimeSheet.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1251)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>23</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditTimeSheet@415d88de</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerAllowUserToExportDataPDF.userRolesModifyManagerAllowUserToExportDataPDF()'><b>userRolesModifyManagerAllowUserToExportDataPDF</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerAllowUserToExportDataPDF<br>Parameters: chrome</td>
+<td></td>
+<td>37</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerAllowUserToExportDataPDF@19b07407</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditUserGroupWidget.userRolesModifyManagerEditUserGroupWidget()'><b>userRolesModifyManagerEditUserGroupWidget</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditUserGroupWidget<br>Parameters: chrome</td>
+<td></td>
+<td>52</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditUserGroupWidget@5a622fe8</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesBulkUpdate.userRolesBulkUpdate()'><b>userRolesBulkUpdate</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesBulkUpdate<br>Parameters: chrome</td>
+<td></td>
+<td>89</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesBulkUpdate@30aec673</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRoleSorting.userRoleSorting()'><b>userRoleSorting</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRoleSorting<br>Parameters: chrome</td>
+<td></td>
+<td>23</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRoleSorting@54ffa561</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesAddNewManagerDelete.userRolesAddNewManagerDelete()'><b>userRolesAddNewManagerDelete</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesAddNewManagerDelete<br>Parameters: chrome</td>
+<td></td>
+<td>110</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesAddNewManagerDelete@1953bc95</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesAddNewMember.userRolesAddNewManager()'><b>userRolesAddNewManager</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesAddNewMember<br>Parameters: chrome</td>
+<td></td>
+<td>36</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesAddNewMember@549ac12c</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerToMeber.userRolesModifyManagerToMeber()'><b>userRolesModifyManagerToMeber</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerToMeber<br>Parameters: chrome</td>
+<td></td>
+<td>130</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerToMeber@3d9f0a5</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyMemberToManager.userRolesModifyMemberToManager()'><b>userRolesModifyMemberToManager</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyMemberToManager<br>Parameters: chrome</td>
+<td></td>
+<td>106</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyMemberToManager@1a2e0d57</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesBulkUpdateMember.userRolesBulkUpdateMember()'><b>userRolesBulkUpdateMember</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesBulkUpdateMember<br>Parameters: chrome</td>
+<td></td>
+<td>49</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesBulkUpdateMember@739e8b96</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditUserWidget.userRolesModifyManagerEditUserWidget()'><b>userRolesModifyManagerEditUserWidget</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditUserWidget<br>Parameters: chrome</td>
+<td></td>
+<td>50</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditUserWidget@124d26ba</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRoleExcelValidation.userRoleExcelValidation()'><b>userRoleExcelValidation</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRoleExcelValidation<br>Parameters: chrome</td>
+<td></td>
+<td>20</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRoleExcelValidation@541bf968</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditWorkLOadForGRoup.userRolesModifyManagerEditWorkLOadForGRoup()'><b>userRolesModifyManagerEditWorkLOadForGRoup</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditWorkLOadForGRoup<br>Parameters: chrome</td>
+<td></td>
+<td>18</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditWorkLOadForGRoup@1cbc1dde</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerRestrictusers.userRolesModifyManagerRestrictusers()'><b>userRolesModifyManagerRestrictusers</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerRestrictusers<br>Parameters: chrome</td>
+<td></td>
+<td>31</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerRestrictusers@4d98e41b</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerExportDataPermissionAllowUserToMail.userRolesModifyManagerExportDataPermissionAllowUserToMail()'><b>userRolesModifyManagerExportDataPermissionAllowUserToMail</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerExportDataPermissionAllowUserToMail<br>Parameters: chrome</td>
+<td></td>
+<td>34</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerExportDataPermissionAllowUserToMail@6acffb2d</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerDontAllowUserToExportDataPDF2.userRolesModifyManagerDontAllowUserToExportDataPDF2()'><b>userRolesModifyManagerDontAllowUserToExportDataPDF2</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerDontAllowUserToExportDataPDF2<br>Parameters: chrome</td>
+<td></td>
+<td>32</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerDontAllowUserToExportDataPDF2@10980560</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditWorkLOadForUser.userRolesModifyManagerEditWorkLOadForUser()'><b>userRolesModifyManagerEditWorkLOadForUser</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditWorkLOadForUser<br>Parameters: chrome</td>
+<td></td>
+<td>19</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditWorkLOadForUser@4971f459</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyMemberHierarchyLevel.userRolesModifyMemberHierarchyLevel()'><b>userRolesModifyMemberHierarchyLevel</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyMemberHierarchyLevel<br>Parameters: chrome</td>
+<td></td>
+<td>14</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyMemberHierarchyLevel@6d6bff89</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesAddNewMemberDelete.userRolesAddNewMemberDelete()'><b>userRolesAddNewMemberDelete</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesAddNewMemberDelete<br>Parameters: chrome</td>
+<td></td>
+<td>47</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesAddNewMemberDelete@58eac00e</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditActivityRating.userRolesModifyManagerEditActivityRating()'><b>userRolesModifyManagerEditActivityRating</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditActivityRating<br>Parameters: chrome</td>
+<td></td>
+<td>48</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditActivityRating@f2d890c</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerAllowUserToExportDataXLS.userRolesModifyManagerAllowUserToExportDataXLS()'><b>userRolesModifyManagerAllowUserToExportDataXLS</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerAllowUserToExportDataXLS<br>Parameters: chrome</td>
+<td></td>
+<td>44</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerAllowUserToExportDataXLS@7eeb38b2</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerDontAllowUserToExportDataXLS.userRolesModifyManagerDontAllowUserToExportDataXLS()'><b>userRolesModifyManagerDontAllowUserToExportDataXLS</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerDontAllowUserToExportDataXLS<br>Parameters: chrome</td>
+<td></td>
+<td>31</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerDontAllowUserToExportDataXLS@149c39b</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesAddNewManager.userRolesAddNewManager()'><b>userRolesAddNewManager</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesAddNewManager<br>Parameters: chrome</td>
+<td></td>
+<td>52</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesAddNewManager@5696c927</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditAO.userRolesModifyManagerEditAO()'><b>userRolesModifyManagerEditAO</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditAO<br>Parameters: chrome</td>
+<td></td>
+<td>18</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditAO@188a5fc2</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerExportDataPermissionNotAllowUserToDemandOnMail.userRolesModifyManagerExportDataPermissionNotAllowUserToDemandOnMail()'><b>userRolesModifyManagerExportDataPermissionNotAllowUserToDemandOnMail</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerExportDataPermissionNotAllowUserToDemandOnMail<br>Parameters: chrome</td>
+<td></td>
+<td>26</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerExportDataPermissionNotAllowUserToDemandOnMail@61149fa5</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerModuleSelection.userRolesModifyManagerModuleSelection()'><b>userRolesModifyManagerModuleSelection</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerModuleSelection<br>Parameters: chrome</td>
+<td></td>
+<td>29</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerModuleSelection@739265f1</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyMemberWorkLoadAnalysis.userRolesModifyManagerEditActivityRating()'><b>userRolesModifyManagerEditActivityRating</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyMemberWorkLoadAnalysis<br>Parameters: chrome</td>
+<td></td>
+<td>19</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyMemberWorkLoadAnalysis@49c099b</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditClientSetting.userRolesModifyManagerEditClientSetting()'><b>userRolesModifyManagerEditClientSetting</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditClientSetting<br>Parameters: chrome</td>
+<td></td>
+<td>15</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditClientSetting@1cb9ef52</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolePDFValidation.userRolePDFValidation()'><b>userRolePDFValidation</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolePDFValidation<br>Parameters: chrome</td>
+<td></td>
+<td>22</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolePDFValidation@5f025000</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyMemberModuleSelection.userRolesModifyMemberModuleSelection()'><b>userRolesModifyMemberModuleSelection</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyMemberModuleSelection<br>Parameters: chrome</td>
+<td></td>
+<td>33</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyMemberModuleSelection@5ed5b321</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditAttendence.userRolesModifyManagerEditAttendence()'><b>userRolesModifyManagerEditAttendence</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditAttendence<br>Parameters: chrome</td>
+<td></td>
+<td>19</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditAttendence@4c07d1fc</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditWorkOutPut.userRolesModifyManagerEditWorkOutPut()'><b>userRolesModifyManagerEditWorkOutPut</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditWorkOutPut<br>Parameters: chrome</td>
+<td></td>
+<td>19</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditWorkOutPut@58f31629</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerHierarchyLevel.userRolesModifyManagerHierarchyLevel()'><b>userRolesModifyManagerHierarchyLevel</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerHierarchyLevel<br>Parameters: chrome</td>
+<td></td>
+<td>13</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerHierarchyLevel@d54d0f5</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerDefineNewActivity.userRolesModifyManagerDefineNewActivity()'><b>userRolesModifyManagerDefineNewActivity</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerDefineNewActivity<br>Parameters: chrome</td>
+<td></td>
+<td>47</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerDefineNewActivity@7459a21e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditTimeSheet.userRolesModifyManagerEditTimeSheet()'><b>userRolesModifyManagerEditTimeSheet</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditTimeSheet<br>Parameters: chrome</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 93
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:289)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:194)
+	at net.pages_worktimemodule.UserRolePage.selectTimeSheet(UserRolePage.java:408)
+	at net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditTimeSheet.userRolesModifyManagerEditTimeSheet(UserRolesModifyManagerEditTimeSheet.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1781607329", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1781607329'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 93
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:289)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:194)
+	at net.pages_worktimemodule.UserRolePage.selectTimeSheet(UserRolePage.java:408)
+	at net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditTimeSheet.userRolesModifyManagerEditTimeSheet(UserRolesModifyManagerEditTimeSheet.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1251)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>24</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditTimeSheet@415d88de</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditTimeSheet.userRolesModifyManagerEditTimeSheet()'><b>userRolesModifyManagerEditTimeSheet</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditTimeSheet<br>Parameters: chrome</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 93
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:289)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:194)
+	at net.pages_worktimemodule.UserRolePage.selectTimeSheet(UserRolePage.java:408)
+	at net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditTimeSheet.userRolesModifyManagerEditTimeSheet(UserRolesModifyManagerEditTimeSheet.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace702712034", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace702712034'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 93
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:289)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:194)
+	at net.pages_worktimemodule.UserRolePage.selectTimeSheet(UserRolePage.java:408)
+	at net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditTimeSheet.userRolesModifyManagerEditTimeSheet(UserRolesModifyManagerEditTimeSheet.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1251)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>24</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditTimeSheet@415d88de</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCustomReports.userRolesModifyManagerEditCustomReports()'><b>userRolesModifyManagerEditCustomReports</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCustomReports<br>Parameters: chrome</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 167
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:289)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:194)
+	at net.pages_worktimemodule.UserRolePage.selectCustomReports(UserRolePage.java:422)
+	at net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCustomReports.userRolesModifyManagerEditCustomReports(UserRolesModifyManagerEditCustomReports.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1258143017", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1258143017'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 167
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:289)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:194)
+	at net.pages_worktimemodule.UserRolePage.selectCustomReports(UserRolePage.java:422)
+	at net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCustomReports.userRolesModifyManagerEditCustomReports(UserRolesModifyManagerEditCustomReports.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1251)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>23</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCustomReports@4a89ef44</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCustomReports.userRolesModifyManagerEditCustomReports()'><b>userRolesModifyManagerEditCustomReports</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCustomReports<br>Parameters: chrome</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 167
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:289)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:194)
+	at net.pages_worktimemodule.UserRolePage.selectCustomReports(UserRolePage.java:422)
+	at net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCustomReports.userRolesModifyManagerEditCustomReports(UserRolesModifyManagerEditCustomReports.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1031145358", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1031145358'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 167
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:289)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:194)
+	at net.pages_worktimemodule.UserRolePage.selectCustomReports(UserRolePage.java:422)
+	at net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCustomReports.userRolesModifyManagerEditCustomReports(UserRolesModifyManagerEditCustomReports.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1251)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>24</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCustomReports@4a89ef44</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCurrentActivity.userRolesModifyManagerEditCurrentActivity()'><b>userRolesModifyManagerEditCurrentActivity</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCurrentActivity<br>Parameters: chrome</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 230
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:289)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:194)
+	at net.pages_worktimemodule.UserRolePage.selectCurrentActivity(UserRolePage.java:415)
+	at net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCurrentActivity.userRolesModifyManagerEditCurrentActivity(UserRolesModifyManagerEditCurrentActivity.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace834138830", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace834138830'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 230
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:289)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:194)
+	at net.pages_worktimemodule.UserRolePage.selectCurrentActivity(UserRolePage.java:415)
+	at net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCurrentActivity.userRolesModifyManagerEditCurrentActivity(UserRolesModifyManagerEditCurrentActivity.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1251)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>23</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCurrentActivity@a0bf272</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCustomReportsPublishReport.userRolesModifyManagerEditCustomReportsPublishReport()'><b>userRolesModifyManagerEditCustomReportsPublishReport</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCustomReportsPublishReport<br>Parameters: chrome</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 167
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:289)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:194)
+	at net.pages_worktimemodule.UserRolePage.selectCustomReports(UserRolePage.java:422)
+	at net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCustomReportsPublishReport.userRolesModifyManagerEditCustomReportsPublishReport(UserRolesModifyManagerEditCustomReportsPublishReport.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1846993884", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1846993884'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 167
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:289)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:194)
+	at net.pages_worktimemodule.UserRolePage.selectCustomReports(UserRolePage.java:422)
+	at net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCustomReportsPublishReport.userRolesModifyManagerEditCustomReportsPublishReport(UserRolesModifyManagerEditCustomReportsPublishReport.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1251)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>24</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCustomReportsPublishReport@310a7859</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCustomReportsPublishReport.userRolesModifyManagerEditCustomReportsPublishReport()'><b>userRolesModifyManagerEditCustomReportsPublishReport</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCustomReportsPublishReport<br>Parameters: chrome</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 167
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:289)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:194)
+	at net.pages_worktimemodule.UserRolePage.selectCustomReports(UserRolePage.java:422)
+	at net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCustomReportsPublishReport.userRolesModifyManagerEditCustomReportsPublishReport(UserRolesModifyManagerEditCustomReportsPublishReport.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1721703875", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1721703875'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 167
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:289)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:194)
+	at net.pages_worktimemodule.UserRolePage.selectCustomReports(UserRolePage.java:422)
+	at net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCustomReportsPublishReport.userRolesModifyManagerEditCustomReportsPublishReport(UserRolesModifyManagerEditCustomReportsPublishReport.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1251)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>24</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCustomReportsPublishReport@310a7859</td></tr>
+<tr>
+<td title='net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCurrentActivity.userRolesModifyManagerEditCurrentActivity()'><b>userRolesModifyManagerEditCurrentActivity</b><br>Test class: net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCurrentActivity<br>Parameters: chrome</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 230
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:289)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:194)
+	at net.pages_worktimemodule.UserRolePage.selectCurrentActivity(UserRolePage.java:415)
+	at net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCurrentActivity.userRolesModifyManagerEditCurrentActivity(UserRolesModifyManagerEditCurrentActivity.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1506223176", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1506223176'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 230
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:289)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:194)
+	at net.pages_worktimemodule.UserRolePage.selectCurrentActivity(UserRolePage.java:415)
+	at net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCurrentActivity.userRolesModifyManagerEditCurrentActivity(UserRolesModifyManagerEditCurrentActivity.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1251)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>23</td>
+<td>net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesModifyManagerEditCurrentActivity@a0bf272</td></tr>
+</table><p>
+</body>
+</html>

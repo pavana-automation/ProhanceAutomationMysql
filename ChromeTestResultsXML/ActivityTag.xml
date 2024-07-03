@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="net.testcases_worktimemodule.categories_activitytags">
+
+	<listeners>
+		<listener class-name="io.qameta.allure.testng.AllureTestNg" />
+		<listener class-name="net.Commons.TestAllureListener" />
+	</listeners>
+
+<!--	<test thread-count="5" name="Test">
+		<parameter name="browser" value="ie" />
+		<classes>
+			<class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesAddNewMemberDelete" />
+		</classes>
+	</test>-->
+<test name="ActivityTag">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			
+   <class name="net.testcases_worktimemodule.categories_activitytags_neworg_administrationmenu.AddActivityTag"/>
+			<class name="net.testcases_worktimemodule.categories_activitytags_neworg_administrationmenu.ModifyActivityTag"/>
+			<class name="net.testcases_worktimemodule.categories_activitytags_neworg_administrationmenu.DeleteActivityTag"/>
+		    <class name="net.testcases_worktimemodule.categories_activitytags_neworg_administrationmenu.ExcelDataValidationForActivityTags"/>
+			<class name="net.testcases_worktimemodule.categories_activitytags_neworg_administrationmenu.PDFValidationForActivityTags"/>
+			<class name="net.testcases_worktimemodule.categories_activitytags_neworg_administrationmenu.ActivityTagsBulkUploadValidatePrefilldData"/>
+			<class name="net.testcases_worktimemodule.categories_activitytags_neworg_administrationmenu.ActivityTagsBulkUploadAdd"/>
+			<class name="net.testcases_worktimemodule.categories_activitytags_neworg_administrationmenu.ActivityTagsBulkUploadModify"/> 
+			<class name="net.testcases_worktimemodule.categories_activitytags_neworg_administrationmenu.ActivityTagsBulkUploadDelete"/>
+		</classes>
+	</test> 
+</suite>

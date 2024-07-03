@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="net.testcases_worktimemodule.validate_userdomain">
+	
+	<listeners>
+		<listener class-name="io.qameta.allure.testng.AllureTestNg" />
+		<listener class-name="net.Commons.TestAllureListener" />
+	</listeners>
+	
+	  <test name="UserDomain">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="net.testcases_worktimemodule.validate_userdomain_administrationmenu.UserDomainPDFValidation"/>
+			<class name="net.testcases_worktimemodule.validate_userdomain_administrationmenu.UserDomainDeleteFunction"/>
+			<class name="net.testcases_worktimemodule.validate_userdomain_administrationmenu.UserDomainExcelValidation"/>
+			<class name="net.testcases_worktimemodule.validate_userdomain_administrationmenu.UserDomainAddFunction"/>
+			<class name="net.testcases_worktimemodule.validate_userdomain_administrationmenu.UserDomainModify"/>
+			<class name="net.testcases_worktimemodule.validate_userdomain_administrationmenu.UserDomainSortingFuncton"/>
+		</classes>
+		
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

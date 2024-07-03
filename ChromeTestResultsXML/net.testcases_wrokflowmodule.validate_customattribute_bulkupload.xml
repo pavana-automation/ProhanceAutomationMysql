@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite
+	name="net.testcases_wrokflowmodule.validate_customattribute_bulkupload">
+
+	<listeners>
+		<listener class-name="io.qameta.allure.testng.AllureTestNg" />
+		<listener class-name="net.Commons.TestAllureListener" />
+	</listeners>
+
+	<test thread-count="5"
+		name="net.testcases_wrokflowmodule.validate_customattribute_bulkupload">
+		<parameter name="browser" value="chrome" />
+
+		<classes>
+ 
+			<class name="net.testcases_wrokflowmodule.validate_customattribute_bulkupload.CustomAttributeWithDuplicateName" />
+			<class name="net.testcases_wrokflowmodule.validate_customattribute_bulkupload.CustomAttributeWithDeleteWithDependency" />
+			<class name="net.testcases_wrokflowmodule.validate_customattribute_bulkupload.CustomAttributeWithModifyFieldType"/> 
+			<class name="net.testcases_wrokflowmodule.validate_customattribute_bulkupload.CustomAttributeWithMissingField" /> 
+			<class name="net.testcases_wrokflowmodule.validate_customattribute_bulkupload.CustomAttributeBulkUpload" /> 
+			<class name="net.testcases_wrokflowmodule.validate_customattribute_bulkupload.CustomAttributeWithFilterbyProcess" />
+			
+		</classes>
+
+	</test> <!-- net.testcases_wrokflowmodule.validate_customattribute_bulkupload -->
+</suite> <!-- net.testcases_wrokflowmodule.validate_customattribute_bulkupload -->

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="net.testcases_worktimemodule.User_adminmenu.Users">
+
+	<listeners>
+		<listener class-name="io.qameta.allure.testng.AllureTestNg" />
+		<listener class-name="net.Commons.TestAllureListener" />
+	</listeners>
+
+<!--	<test thread-count="5" name="Test">
+		<parameter name="browser" value="ie" />
+		<classes>
+			<class name="net.testcases_worktimemodule.validate_user_roles_administrationmenu.UserRolesAddNewMemberDelete" />
+		</classes>
+	</test>-->
+	
+<test name="net.testcases_worktimemodule.User">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="net.testcases_worktimemodule.User_adminmenu.UsersBulkUploadForInactiveUsersWithMissingFields"/>
+				
+		
+		<!--
+		<class name="net.testcases_worktimemodule.User_adminmenu.UsersAddingNew"/>
+		<class name="net.testcases_worktimemodule.User_adminmenu.UsersReportColumn"/>
+	<class name="net.testcases_worktimemodule.User_adminmenu.UsersSearchValidation"/>		
+		<class name="net.testcases_worktimemodule.User_adminmenu.UsersLoggedinUsersByClientMode"/>
+			<class name="net.testcases_worktimemodule.User_adminmenu.UsersLoggedinUsersByClientVersion"/>
+		<class name="net.testcases_worktimemodule.User_adminmenu.UsersLoggedinUsersByActivity"/>
+		<class name="net.testcases_worktimemodule.User_adminmenu.UsersLoggedinUsersByDotNetVersion"/>
+			<class name="net.testcases_worktimemodule.User_adminmenu.UsersLoggedinUsersByTrayMemory"/>
+		<class name="net.testcases_worktimemodule.User_adminmenu.UsersEmailExportClose"/>
+		<class name="net.testcases_worktimemodule.User_adminmenu.UsersLoggedinUsersByOperatingSystem"/>
+		<class name="net.testcases_worktimemodule.User_adminmenu.UsersLoggedinUsersByOSflavour"/>
+		<class name="net.testcases_worktimemodule.User_adminmenu.UsersLoggedinUsersByServiceCPU"/>
+			<class name="net.testcases_worktimemodule.User_adminmenu.UsersLoggedinUsersBytrayCPU"/>
+		<class name="net.testcases_worktimemodule.User_adminmenu.UsersLoggedinUsersByServiceMemory"/>
+				<class name="net.testcases_worktimemodule.User_adminmenu.UsersLoggedinUsersByProxy"/>
+		
+		<class name="net.testcases_worktimemodule.User_adminmenu.UsersDefineTenureRangeWithMissingFields"/>
+	<class name="net.testcases_worktimemodule.User_adminmenu.UsersAttributesForActiveUsers"/>
+		<class name="net.testcases_worktimemodule.User_adminmenu.UsersAttributesForInactiveUsers"/>
+		<class name="net.testcases_worktimemodule.User_adminmenu.UsersEmailExportWithMoreRecipients"/>
+		<class name="net.testcases_worktimemodule.User_adminmenu.UsersEmailExportWithMissingRecipients"/>
+		<class name="net.testcases_worktimemodule.User_adminmenu.UsersEmailexportWithMissingReportViewBy"/>
+		<class name="net.testcases_worktimemodule.User_adminmenu.UsersPDFValidation"/>
+		<class name="net.testcases_worktimemodule.User_adminmenu.UsersExcelValidation"/>
+		<class name="net.testcases_worktimemodule.User_adminmenu.UsersBulkUploadForAllUsers"/>
+		<class name="net.testcases_worktimemodule.User_adminmenu.UsersBulkUploadForActiveUsersWithMissingFields"/>
+		<class name="net.testcases_worktimemodule.User_adminmenu.UsersBulkUploadForActiveUsers"/>
+		<class name="net.testcases_worktimemodule.User_adminmenu.UserAttributeSearchValidation"/>
+		<class name="net.testcases_worktimemodule.User_adminmenu.UsersBulkUploadForInactiveUsers"/>		
+		<class name="net.testcases_worktimemodule.User_adminmenu.UsersSearchValidation"/>
+		
+		<class name="net.testcases_worktimemodule.User_adminmenu.UsersBulkUploadForActiveUsersWithMissingFields"/>
+		<class name="net.testcases_worktimemodule.User_adminmenu.UsersBulkUploadForAllUsersWithMissingFileds"/>-->
+		</classes>
+	</test> 
+</suite> 
+
+	

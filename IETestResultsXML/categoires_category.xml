@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Categoires Category">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="net.testcases_worktimemodule.categories_category_administrationmenu.AddCategory"/>
+      <class name="net.testcases_worktimemodule.categories_category_administrationmenu.ModifyCategory"/>
+      <class name="net.testcases_worktimemodule.categories_category_administrationmenu.DeleteCategory"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Categoires Category -->
